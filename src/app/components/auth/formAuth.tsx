@@ -24,7 +24,7 @@ export default function formAuth({ type, changeOpen }): JSX.Element {
                     set(list.data)
                     toast.success('Login exitoso');
                     console.log(user)
-                    
+                    location.reload();
                     changeOpen()
                     
                 }catch(e){

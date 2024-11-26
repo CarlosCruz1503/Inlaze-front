@@ -43,11 +43,11 @@ export default function MoviesSection({ setSearch, search, popular, now_playing,
                                 </div>
                                 <div className="px-8 py-2">
                                     <h2>Top Rated</h2>
-                                    <SwiperList data={upcoming}></SwiperList>
+                                    <SwiperList data={top_rated}></SwiperList>
                                 </div>
                                 <div className="px-8 py-2">
                                     <h2>Upcoming</h2>
-                                    <SwiperList data={top_rated}></SwiperList>
+                                    <SwiperList data={upcoming}></SwiperList>
                                 </div>
                             </>
                         )

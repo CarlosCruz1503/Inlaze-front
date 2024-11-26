@@ -13,8 +13,6 @@ export default function CardAuth({ changeOpen }): JSX.Element {
     const [loginOrRegister, setLoginOrRegister] = useState('Login');
     const { isLoggedIn, user, logout } = useAuth();
     const { set, favorite } = useFavorite()
-    console.log(isLoggedIn)
-    console.log(user)
     useEffect(() => {
         if (isLoggedIn) {
             console.log('Datos recargados tras login');
@@ -59,15 +57,15 @@ export default function CardAuth({ changeOpen }): JSX.Element {
                                             <div>
                                                 <h4 className="text-center">Peliculas que te gustan</h4>
 
-                                                <div className="flex justify-center items-center grid lg:grid-cols-8 md:grid-cols-6 grid-cols-4 ">
+                                                <div className="flex justify-center items-center grid lg:grid-cols-6 md:grid-cols-3 grid-cols-3 ">
                                                     {
                                                         favorite.map((movie) => {
                                                             return (
                                                                 <div className="flex justify-center items-center flex-col ">
                                                                     <p className="text-center">{movie.title}</p>
-                                                                    <Image className="rounded-t-lg max-w-12 "
+                                                                    <Image className="rounded-t-lg max-w-14 md:max-w-24 lg:max-w-36 xl:max-w-48"
                                                                         src={`${IMDB_IMAGES}${movie.photo}`}
-                                                                        alt="" width={20} height={20}
+                                                                        alt="" width={30} height={30}
                                                                     />
                                                                 </div>
                                                             );

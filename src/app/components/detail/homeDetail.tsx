@@ -42,11 +42,12 @@ export default function HomeDetail({ id }: { id: string }) {
   }, [id, user?.token]);
 
   if (!isLoggedIn) {
-    return <div className="w-screen h-screen bg-gray-900">
-      <div className="flex items-center justify-center">
-        <p className="text-center"></p>
+    return (
+      <div>
+        <Nav >
+        </Nav >
       </div>
-    </div>;
+    );
   }
 
   return (

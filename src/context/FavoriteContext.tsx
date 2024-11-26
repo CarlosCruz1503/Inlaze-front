@@ -13,6 +13,7 @@ interface FavoriteContextType {
     favorite: Favorite;
     add: (favorite: Favorite) => void;
     remove: () => void;
+    set: () => void;
 }
 
 const FavoriteContext = createContext<FavoriteContextType | undefined>(undefined);

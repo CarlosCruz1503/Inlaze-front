@@ -8,11 +8,9 @@ export default function Home(): JSX.Element {
 
   return (
     <RootLayout>
-      
       <Nav></Nav>
       <Header></Header>
       <Catalog></Catalog>
-
     </RootLayout>
   );
 }

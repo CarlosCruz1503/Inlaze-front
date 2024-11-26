@@ -9,6 +9,7 @@ type User = {
 
 interface AuthContextType {
     user: User;
+    isLoggedIn: Boolean;
     login: (user: User) => void;
     logout: () => void;
 }
